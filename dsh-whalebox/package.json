@@ -1,0 +1,63 @@
+{
+  "name": "dsh-whalebox",
+  "version": "0.3.1",
+  "description": "鲸箱：DeepSeek Harness 的模块注册器与统一开关面板。core + wrapped 模块，一个包管一组工具。",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web"
+    },
+    "compatibility": {
+      "dsh": ">=0.2.1-rc.2 <0.3.0",
+      "node": ">=20.18",
+      "profiles": [
+        "desktop",
+        "web"
+      ]
+    }
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "README.md",
+    "README.en.md",
+    "CHANGELOG.md",
+    "LICENSE",
+    "docs",
+    "templates"
+  ],
+  "engines": {
+    "node": ">=20.18"
+  },
+  "license": "MIT",
+  "keywords": [
+    "dsh-plugin",
+    "deepseek-harness",
+    "dsh",
+    "plugin-manager",
+    "desktop"
+  ],
+  "author": "nihility-1",
+  "homepage": "https://github.com/nihility-1/dsh-whalebox",
+  "bugs": {
+    "url": "https://github.com/nihility-1/dsh-whalebox/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nihility-1/dsh-whalebox.git"
+  },
+  "scripts": {
+    "check": "node --check index.js && node --check client.js",
+    "prepublishOnly": "npm run check"
+  }
+}

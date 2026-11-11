@@ -1,0 +1,5 @@
+# dsh-whalebox — bundle patch layer
+# 默认只插入鲸箱自己；「代挂」的第三方插件由设置面板按需追加/移除。
+- insert:
+    - id: dsh-whalebox
+      name: 'dsh-whalebox'

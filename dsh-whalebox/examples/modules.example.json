@@ -1,0 +1,20 @@
+{
+  "modules": [
+    {
+      "id": "notify",
+      "name": "通知",
+      "kind": "wrapped",
+      "upstream": "my-notify-plugin"
+    },
+    {
+      "id": "tts",
+      "name": "语音",
+      "kind": "wrapped",
+      "upstream": "my-tts-plugin",
+      "tools": [
+        "say",
+        "stop"
+      ]
+    }
+  ]
+}
