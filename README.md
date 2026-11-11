@@ -53,6 +53,10 @@ DSH（DeepSeek Harness）的插件生态很热，但每装一个，模型每次�
 # 从 npm（发布后）
 dsh plugin --profile desktop add dsh-whalebox
 
+# 或在仓库里直接装（包在子目录 dsh-whalebox/）
+git clone https://github.com/nihility-1/dsh-whalebox.git
+dsh plugin --profile desktop add file:./dsh-whalebox/dsh-whalebox
+
 # 或从本地目录 / tgz
 dsh plugin --profile desktop add file:C:/path/to/dsh-whalebox
 ```
